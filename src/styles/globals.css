@@ -1,0 +1,47 @@
+@import url('./normalize.css');
+@import url('./fonts.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    min-width: 320px;
+}
+
+
+.search-item .search-btn {
+    /* Ensure Search Item Animation is in Sync w/ '➡️' Icon */
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+
+    opacity: 0;
+}
+
+.search-item:hover .search-btn {
+    opacity: 1;
+}
+
+
+/* For Firefox */
+.search-container {
+    scrollbar-width: thin;
+    scrollbar-color: #111827 white;
+}
+  
+/* For Chrome, Edge, & Safari */
+.search-container::-webkit-scrollbar {
+    width: 15px;
+}
+  
+.search-container::-webkit-scrollbar-track {
+    background: white;
+}
+
+.search-container::-webkit-scrollbar-thumb {
+    background-color: #111827;
+    border-radius: 5px;
+    border: 3px solid white;
+}

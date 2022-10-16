@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { ArrowCircleRightIcon } from '@heroicons/react/solid';
+import { ArrowRightCircleIcon } from '@heroicons/react/24/solid';
 
 const SearchModalFooter = ({ searchItemsCount }) => {
     return (
@@ -21,7 +21,7 @@ const SearchModalFooter = ({ searchItemsCount }) => {
                                 <div className="flex flex-row items-center justify-center search-btn">
                                     <div>
                                         <span className="sr-only">Select</span>
-                                        <ArrowCircleRightIcon className="w-5 h-5 text-blue-600 md:h-6 md:w-6 lg:h-7 lg:w-7" />
+                                        <ArrowRightCircleIcon className="w-5 h-5 text-blue-600 md:h-6 md:w-6 lg:h-7 lg:w-7" />
                                     </div>
                                 </div>
                             </article>

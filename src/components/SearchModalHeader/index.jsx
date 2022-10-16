@@ -3,11 +3,11 @@ import { Fragment } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import {
     CheckIcon,
-    SearchIcon,
     XCircleIcon,
-    SelectorIcon,
     MicrophoneIcon,
-} from '@heroicons/react/solid';
+    ChevronUpDownIcon,
+    MagnifyingGlassIcon
+} from '@heroicons/react/24/solid';
 
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
@@ -40,7 +40,7 @@ const SearchModalHeader = ({
                                             {selectedCategory.name}
                                         </span>
                                         <span className="absolute inset-y-0 right-0 flex items-center pr-2 ">
-                                            <SelectorIcon
+                                            <ChevronUpDownIcon
                                                 className="w-5 h-5 text-search-dark-blue/30"
                                                 aria-hidden="true"
                                             />
@@ -113,7 +113,7 @@ const SearchModalHeader = ({
                             className="flex items-center pointer-events-none"
                             aria-hidden="true"
                         >
-                            <SearchIcon
+                            <MagnifyingGlassIcon
                                 className="w-5 h-5 text-search-dark-blue/30 md:h-6 md:w-6 lg:h-7 lg:w-7"
                                 aria-hidden="true"
                             />

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { SearchIcon } from '@heroicons/react/solid';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
 
 import SearchModal from '../SearchModal';
 
@@ -49,7 +49,7 @@ const SearchBar = () => {
                     className="flex items-center w-screen h-12 max-w-5xl px-4 mx-8 space-x-3 text-left transition duration-100 ease-in-out bg-white border rounded-lg cursor-text border-search-dark-blue/20 hover:border-0 text-search-dark-blue/30 md:h-14 lg:h-16 hover:drop-shadow-lg"
                     onClick={() => showModal()}
                 >
-                    <SearchIcon
+                    <MagnifyingGlassIcon
                         className="w-5 h-5 md:h-6 md:w-6 lg:h-7 lg:w-7"
                         aria-hidden="true"
                     />

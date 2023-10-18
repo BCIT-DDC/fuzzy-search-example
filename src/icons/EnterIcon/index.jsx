@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
-const EnterIcon = ({ className }) => (
-    <svg
+function EnterIcon({ className }) {
+  return <svg
         fill="none"
         viewBox="0 0 36 36"
         className={className}
@@ -14,6 +14,6 @@ const EnterIcon = ({ className }) => (
             fill="#fff"
         />
     </svg>
-);
+}
 
 export default EnterIcon;

@@ -6,7 +6,7 @@ import {
     XCircleIcon,
     MicrophoneIcon,
     ChevronUpDownIcon,
-    MagnifyingGlassIcon
+    MagnifyingGlassIcon,
 } from '@heroicons/react/24/solid';
 
 function classNames(...classes) {
